@@ -1,0 +1,26 @@
+<div ng-controller="DashboardController">
+<div class="logout">
+    <button ng-click="logout()">Logout</button>
+</div>
+<div class="submit">
+    <button ng-click="submit()">Submit</button>
+</div>
+<div>
+    <table style="width:100%">
+        <tr>
+            <th>Id</th>
+            <th>Amount</th>
+            <th>Currency</th>
+            <th>Time</th>
+            <th>Active</th>
+        </tr>
+            <tr ng-repeat="list in data">
+                <td>{{ list.id }}</td>
+                <td>{{ list.amount }}</td>
+                <td>{{ list.currency }}</td>
+                <td>{{ list.time }}</td>
+                <td>{{ list.active }}</td>
+            </tr>
+    </table>
+</div>
+</div>
